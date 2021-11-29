@@ -1,5 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config('../.env');
+require('dotenv').config('../.env');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { fetchData } = require('../static/fetch');
 const weatherURL = `api.openweathermap.org/data/2.5/weather?q=London&appid=${process.env.API_KEY}`;
